@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayitOl">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorControlHighlight"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <EditText
+                android:id="@+id/kayit_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="0dp"
+                android:ems="0"
+                android:hint="İsim"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_dark"
+                android:textColorLink="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/kayit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="0dp"
+                android:ems="0"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/background_dark"
+                android:textColorLink="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/kayit_sifre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="10dp"
+                android:ems="0"
+                android:hint="Şifre"
+                android:inputType="textPassword"
+                android:textColor="@android:color/background_dark"
+                android:textColorLink="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="55dp">
+
+                <Button
+                    android:id="@+id/kayit_tamamla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_orange_light"
+                    android:onClick="KayitIslem"
+                    android:text="KAYIT OL"
+                    android:textColor="@android:color/background_dark" />
+
+                <Button
+                    android:id="@+id/vazgec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_light"
+                    android:onClick="KayitIslem"
+                    android:text="VAZGEÇ"
+                    android:textColor="@android:color/background_dark" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

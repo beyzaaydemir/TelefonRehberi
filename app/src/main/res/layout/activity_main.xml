@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Hoşgeldiniz!"
+            android:textAlignment="inherit"
+            android:textColor="@android:color/background_light"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_kayit"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:background="@android:color/background_dark"
+            android:onClick="butonaDokunuldu"
+            android:text="KAYIT OL"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btn_temizle"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="74dp"
+            android:background="@android:color/background_dark"
+            android:onClick="butonaDokunuldu"
+            android:text="TEMİZLE"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/btn_gir"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/background_dark"
+            android:onClick="butonaDokunuldu"
+            android:text="GİRİŞ"
+            android:textColor="@android:color/background_light" />
+        />
+
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="242dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="E_postanız"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/background_dark"
+                android:textColorLink="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_sifre"
+                android:layout_width="615dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/background_light"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="Şifreniz"
+                android:inputType="textPassword"
+                android:linksClickable="false"
+                android:selectAllOnFocus="false"
+                android:textColor="@android:color/background_dark"
+                android:textColorLink="@android:color/background_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editPassword"
+                android:layout_centerVertical="true"
+                android:text="Beni hatırla"
+                android:textColor="@android:color/background_light" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:text="Hesabınız yok mu? Kaydolun"
+                android:textColor="@android:color/background_light" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
