@@ -130,18 +130,7 @@ class Veritabani extends SQLiteOpenHelper {
         Cursor res=db.rawQuery(" SELECT * FROM " +TABLE2_NAME,null);
         return res;
     }
-  /*  public boolean updateData(String id,String ad, String soyad, String telefon, String cinsiyet)
-    {
-        SQLiteDatabase db=this.getWritableDatabase();
-        ContentValues contentValues=new ContentValues();
-        contentValues.put(ROW_ID,id);
-        contentValues.put(ROW_AD,ad);
-        contentValues.put(ROW_SOYAD,soyad);
-        contentValues.put(ROW_TEL,telefon);
-        contentValues.put(ROW_CINSIYET, cinsiyet);
-        db.update(TABLE2_NAME, contentValues, "ID= ?", new String[] { id });
-        return true;
-    }*/
+
 
     public Integer deleteData(String id)
     {
